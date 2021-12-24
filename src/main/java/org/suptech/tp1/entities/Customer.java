@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity @Table(name = "Client")
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor @ToString
 public class Customer {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
